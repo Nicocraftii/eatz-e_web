@@ -4,73 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eatz-e — L'assistant alimentaire intelligent et sans effort</title>
-  <!-- Icônes FontAwesome -->
+
+  <meta property="og:title" content="Eatz-e">
+  <meta property="og:description" content="Votre assistant alimentaire intelligent">
+  <meta property="og:image" content="icon.s.png">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="icon.s.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Liaison vers ton fichier CSS externe -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body
-
-  <!-- Barre de Navigation -->
+<body>
+  <script src="main.js" defer></script>
+  
   <nav>
     <div class="logo-area">
-      <!-- Si ton logo ne charge pas localement, le fallback prendra les couleurs de ta palette -->
-      <img src="logo.png" alt="Eatz-e Logo" onerror="this.src='https://placehold.co/45x45/68C360/142D3A?text=🌱'">
+      <img src="logo.png" alt="Eatz-e Logo">
       <span>Eatz-e</span>
     </div>
     <a href="#here" class="nav-btn">Installer l'application</a>
   </nav>
 
-  <!-- Zone Principale (Hero) -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-text">
-      <span class="tagline">🔥 Assistant Alimentaire Prédictif</span>
+      <!-- <span class="tagline">🔥 Assistant Alimentaire Prédictif</span> -->
       <h2>Vos courses ont enfin un <span>assistant intelligent</span>.</h2>
-      <p id="here" >Ne jetez plus jamais d'argent par les fenêtres. Prenez votre ticket de caisse en photo : Eatz-e estime intelligemment la fraîcheur de votre frigo et génère de super recettes. Zéro inventaire manuel, zéro contrainte.</p>
+      <p id="here" >Ne jetez plus jamais d'argent par les fenêtres. <br> Prenez votre ticket de caisse en photo : <br> Eatz-e estime intelligemment la fraîcheur de vos aliments et génère de super recettes.</p>
       
       <div class="cta-group" id="download">
         <a href="app.apk" class="btn-download" download>
-          <i class="fa-solid fa-download"></i> Télécharger Eatz-e (.apk)
+          <i class="fa-solid fa-download"></i> Télécharger gratuitement
         </a>
-        <span class="btn-subtext"><i class="fa-brands fa-android"></i> Exclusif Android · Gratuit et sans publicité</span>
+        <span class="btn-subtext"><i class="fa-brands fa-android"></i> Android APK · 50 MB · Sans Publicité</span>
       </div>
     </div>
 
     <div class="hero-visual">
-      <!-- Le Mockup interactif calqué sur ton visuel -->
-      <div class="mockup-container">
-        <div class="mockup-screen">
-          <i class="fa-solid fa-basket-shopping"></i>
-          <h3>Eatz-e</h3>
-          <p class="mockup-subtitle">Votre frigo est sous contrôle.</p>
-          <div class="mockup-alert">
-            <span class="alert-title">⚠️ Suggestion</span> : Vos tomates achetées mardi sont mûres. C'est l'heure d'une sauce !
+      <div class="mockup-wrapper">
+
+        <div class="mockup-container">
+          <div class="mockup-screen">
+            <div class="mockup-slider">
+              <div class="slide"><img src="mockup0.png"></div>
+              <div class="slide"><img src="mockup1.png"></div>
+              <div class="slide"><img src="mockup2.png"></div>
+              <div class="slide"><img src="mockup3.png"></div>
+              <div class="slide"><img src="mockup4.png"></div>
+              <div class="slide"><img src="mockup5.png"></div>
+            </div>
           </div>
         </div>
+
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- Section Problème vs Solution -->
-  <section class="split-section">
+  
+  <section id="download" class="split-section">
     <div class="problem-card">
       <h4><i class="fa-solid fa-triangle-exclamation"></i> Le Problème</h4>
       <p>Les applications de gestion de frigo classiques échouent toutes parce que personne n'a le temps ni l'envie de scanner ses yaourts un par un en rentrant des courses. Tenir un inventaire manuel est une charge mentale insupportable.</p>
     </div>
     <div class="solution-card">
       <h4><i class="fa-solid fa-circle-check"></i> La Solution</h4>
-      <p>Eatz-e élimine l'inventaire fastidieux. Notre IA estime de manière prédictive le contenu et la fraîcheur de vos aliments à partir d'entrées ultra-simples comme vos tickets de caisse, pour vous libérer l'esprit sans effort.</p>
+      <p>Eatz-e élimine l'inventaire fastidieux. Notre IA estime de manière prédictive le contenu de votre frigo et la fraîcheur de vos aliments à partir d'entrées ultra-simples comme vos tickets de caisse, pour vous libérer l'esprit sans effort.</p>
     </div>
   </section>
 
-  <!-- Section Fonctionnalités -->
+
   <section class="features-section">
     <h3>Comment ça fonctionne ?</h3>
     <div class="features-grid">
       <div class="feature-item">
         <div class="feature-icon"><i class="fa-solid fa-receipt"></i></div>
         <h5>Scan de ticket</h5>
-        <p>Prenez simplement votre ticket de supermarché en photo. Notre technologie extrait les aliments achetés en un clin d'œil.</p>
+        <p>Prenez simplement votre ticket de supermarché en photo. Notre technologie extrait les aliments achetés.</p>
       </div>
       <div class="feature-item">
         <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
@@ -89,5 +108,9 @@
       </div>
     </div>
   </section>
+
+  <footer>
+    <p>Projet réalisé dans le cadre du Hackathon "Home" — Epitech 2026.</p>
+  </footer>
 </body>
 </html>
