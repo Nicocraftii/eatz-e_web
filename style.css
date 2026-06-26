@@ -212,6 +212,8 @@ nav {
 }
 
 .mockup-container {
+  max-width:100%;
+  overflow:hidden;
   width: 300px;
   height: 620px;
   background: #fff;
