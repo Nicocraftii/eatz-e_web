@@ -278,12 +278,16 @@ nav {
   position: relative; 
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .hero-visual {
     transform: scale(0.8);
   }
 }
-
+@media (width > 1080px) {
+  .hero-visual {
+    transform: scale(1.1);
+  }
+}
 .mockup-container {
   max-width:100%;
   overflow:hidden;
