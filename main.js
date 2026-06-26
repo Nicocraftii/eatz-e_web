@@ -9,8 +9,8 @@ if (window.innerWidth < 768) {
 }
 
 
-const maxTilt = 30;
-const influenceRadius = 600;
+const maxTilt = 40;
+const influenceRadius = 700;
 
 let targetX = baseX;
 let targetY = baseY;

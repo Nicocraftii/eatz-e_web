@@ -23,16 +23,25 @@
       <img src="logo.png" alt="Eatz-e Logo">
       <span>Eatz-e</span>
     </div>
-    <a href="#here" class="nav-btn">Installer l'application</a>
+
+    <div class="nav-btns">
+      <a href="#main">About</a>
+      <a href="#download">Téléchargement</a>
+      <a href="#context">Contexte</a>
+      <a href="#features">Fonctionnalités</a>
+    </div>
+
+    <a href="#download" class="nav-btn">Installer</a>
   </nav>
 
+  <span id="main" style="display: absolute; top: 0; opacity: 0; padding:10rem; transform: translateY(-10vw);"></span>
+
   <section id="hero" class="hero">
-    <div class="hero-text">
-      <!-- <span class="tagline">🔥 Assistant Alimentaire Prédictif</span> -->
+    <div id="download" class="hero-text">
       <h2>Vos courses ont enfin un <span>assistant intelligent</span>.</h2>
-      <p id="here" >Ne jetez plus jamais d'argent par les fenêtres. <br> Prenez votre ticket de caisse en photo : <br> Eatz-e estime intelligemment la fraîcheur de vos aliments et génère de super recettes.</p>
+      <p>Ne jetez plus jamais d'argent par les fenêtres. <br> Prenez votre ticket de caisse en photo : <br> Eatz-e estime intelligemment la fraîcheur de vos aliments et génère de super recettes.</p>
       
-      <div class="cta-group" id="download">
+      <div class="cta-group" >
         <a href="app.apk" class="btn-download" download>
           <i class="fa-solid fa-download"></i> Télécharger gratuitement
         </a>
@@ -66,12 +75,13 @@
         </div>
 
       </div>
+      <span id="context" style="opacity: 0; transform: translateY(20vw);"></span>
 
     </div>
   </section>
 
   
-  <section id="download" class="split-section">
+  <section class="split-section">
     <div class="problem-card">
       <h4><i class="fa-solid fa-triangle-exclamation"></i> Le Problème</h4>
       <p>Les applications de gestion de frigo classiques échouent toutes parce que personne n'a le temps ni l'envie de scanner ses yaourts un par un en rentrant des courses. Tenir un inventaire manuel est une charge mentale insupportable.</p>
@@ -83,7 +93,7 @@
   </section>
 
 
-  <section class="features-section">
+  <section id="features" class="features-section">
     <h3>Comment ça fonctionne ?</h3>
     <div class="features-grid">
       <div class="feature-item">
