@@ -101,14 +101,19 @@ nav {
   font-size: 0.9rem; 
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
   user-select: none;
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: var(--shadow-z2);
+  border: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-btns {
   display: flex;
   flex-direction: row;
   gap: clamp(2vw, 2.5rem, 3vw);
+  align-items: center;
+  text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
