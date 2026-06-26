@@ -238,7 +238,7 @@ nav {
   display: inline-flex; 
   align-items: center; 
   gap: 15px; 
-  background: var(--green-gradient); 
+  background: #818f72 /*var(--green-gradient)*/; 
   color: white; 
   padding: 18px 42px; 
   border-radius: 50px; 
@@ -251,7 +251,7 @@ nav {
   z-index: 10; 
 }
 
-.btn-download:hover { 
+.btn-download/*:hover*/ { 
   transform: translateY(-4px) scale(1.01); 
   box-shadow: 0 20px 30px -5px rgba(77, 123, 66, 0.4); 
 }
